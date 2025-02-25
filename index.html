@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>1 INPUT 1 OUTPUT TEMPLATE</title>
     <style>
-
         /* STYLE FOR THE INPUT FIELD */
         #charInput {
             font-size: 18px;
@@ -27,9 +26,15 @@
             max-width: 100%;
             box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
             margin: auto;
+            filter: blur(5px);
+            transition: filter 0.5s ease-in-out;
 
         }
+        #displayedImage:hover{
+            filter: blur(0px);
+        }
         img:hover {
+            filter: blur(0px);
             opacity: 0.7; 
             transform: scale(1.1); 
             transition: 0.3s ease-in-out;}
@@ -88,13 +93,14 @@
     </style>
 </head>
 <body>
-
+<header>If you messed up with me</header>
+<p>you will mess up with</p>
     
     <!-- INPUT FIELD FOR 1 CHARACTER -->
     <input type="text" id="charInput" maxlength="1">
 
     <!-- BUTTON TO DISPLAY IMAGE -->
-    <button class=omo onclick="displayImage()" id="submitButton">Show Image</button>
+    <button class=omo onclick="displayImage()" id="submitButton">WHO I AM :）</button>
 
     <!-- IMAGE TO DISPLAY -->
     <img id="displayedImage" src="" alt="Displayed Image">
@@ -110,17 +116,17 @@
             "images/截屏2025-02-25 10.51.04.png", //C
             "images/截屏2025-02-25 10.51.30.png", //D
             "images/截屏2025-02-25 10.51.54.png", //E
-            "https://via.placeholder.com/300/FF00FF/FFFFFF?text=F", //F
-            "https://via.placeholder.com/300/FF00FF/FFFFFF?text=G", //G
-            "https://via.placeholder.com/300/FF00FF/FFFFFF?text=H", //H
-            "https://via.placeholder.com/300/FF00FF/FFFFFF?text=I", //I
-            "https://via.placeholder.com/300/FF00FF/FFFFFF?text=J", //J
-            "https://via.placeholder.com/300/FF00FF/FFFFFF?text=K", //K
-            "https://via.placeholder.com/300/FF00FF/FFFFFF?text=L", //L
-            "https://via.placeholder.com/300/FF00FF/FFFFFF?text=M", //M
-            "https://via.placeholder.com/300/FF00FF/FFFFFF?text=N", //N
-            "https://via.placeholder.com/300/FF00FF/FFFFFF?text=O", //O
-            "https://via.placeholder.com/300/FF00FF/FFFFFF?text=P", //P
+            "images/P9671_701E10152_01.jpg", //F
+            "images/P10232_701E12638_01.jpg", //G
+            "images/P10509_701E13503_01.jpg", //H
+            "images/截屏2025-02-25 11.34.47.png", //I
+            "images/截屏2025-02-25 11.34.40.png", //J
+            "images/P9671_701E10152_01.jpg", //K
+            "images/截屏2025-02-25 11.34.47.png", //L
+            "images/截屏2025-02-25 11.34.29.png", //M
+            "images/截屏2025-02-25 11.33.52.png", //N
+            "images/截屏2025-02-25 11.32.37.png", //O
+            "images/截屏2025-02-25 11.32.23.png", //P
             "https://via.placeholder.com/300/FF00FF/FFFFFF?text=Q", //Q
             "https://via.placeholder.com/300/FF00FF/FFFFFF?text=R", //R
             "https://via.placeholder.com/300/FF00FF/FFFFFF?text=S", //S
